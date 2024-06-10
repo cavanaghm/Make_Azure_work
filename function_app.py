@@ -2,6 +2,7 @@ import azure.functions as func
 import datetime
 import json
 import logging
+import psycopg2
 
 app = func.FunctionApp()
 
@@ -12,6 +13,6 @@ app = func.FunctionApp()
     run_on_startup=True,
     use_monitor=False,
 )
-def travel_man(myTimer: func.TimerRequest) -> None:
+def test(myTimer: func.TimerRequest) -> None:
     logging.info("stats")
 
