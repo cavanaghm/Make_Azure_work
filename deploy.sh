@@ -21,7 +21,7 @@ fi
 echo "Deploying Function App: $FUNCTION_NAME"
 
 
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 
 rm ./.python_packages -rf
